@@ -64,18 +64,24 @@ function App(): React.JSX.Element {
 
 
   
-  const [number, setNumber] = useState(null);
-  useEffect(() => {
-	  const unsubscribe = watchEvents.addListener('message', (messageFromWatch, reply) => {
-	    console.log({messageFromWatch})
-		setNumber(messageFromWatch)
-	    reply({text: 'Thanks watch!'})
-	  })
-
-    return () => {
-      unsubscribe();
-    };
-  }, []);
+  const [watchMessage, setWatchMessage] = useState("waiting...");
+  const messageListener = () => watchEvents.on('message', (message) => {
+      setWatchMessage(message)
+  })
+  useEffect(() => { messageListener() }, [])
+  
+  
+  // useEffect(() => {
+  // 	  const unsubscribe = watchEvents.addListener('message', (messageFromWatch, reply) => {
+  // 	    console.log({messageFromWatch})
+  // 		setWatchMessage(messageFromWatch)
+  // 	    reply({text: 'Thanks watch!'})
+  // 	  })
+  //
+  //   return () => {
+  //     unsubscribe();
+  //   };
+  // }, []);
   
   
   
@@ -98,7 +104,7 @@ function App(): React.JSX.Element {
             paddingBottom: safePadding,
           }}>
           <Section title="Message from watch">
-		   {number}
+		   {watchMessage}
           </Section>
         </View>
       </ScrollView>

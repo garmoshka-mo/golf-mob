@@ -55,9 +55,8 @@ struct FieldView: View {
 
   @ObservedObject var phoneConnector = PhoneConnector()
   func sendNumber(_ number: Int) {
-    self.phoneConnector.session.sendMessage(["number": number], replyHandler: nil) { (error) in
-                print(error.localizedDescription)
-            }
+    self.phoneConnector.session.sendMessage(["number": number], replyHandler: nil) 
+    { (error) in print(error.localizedDescription) }
   }
 }
 
