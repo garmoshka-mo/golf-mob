@@ -11,7 +11,7 @@ import {
   ScrollView,
   StatusBar,
   StyleSheet,
-  Text,
+  Text, TextInput, Button, Alert,
   useColorScheme,
   View,
 } from 'react-native';
@@ -23,7 +23,7 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import {watchEvents} from "react-native-watch-connectivity";
+import {watchEvents, sendMessage} from "react-native-watch-connectivity";
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -106,7 +106,23 @@ function App(): React.JSX.Element {
           <Section title="Message from watch">
 		   {watchMessage}
           </Section>
+		  <Section title="Message to watch">
+	  		<Button title="Send message to watch"
+	  		    onPress={() =>
+	  		        sendMessage(
+	  		            {text: "message from phone"}, 
+	  			    reply => {console.log(reply)},
+	  			    error => { 
+	  			        if (error) { 
+	  			            Alert.alert("The message can't be sent! The watchOS application is probably not running in the foreground! 🤔")
+	  			        }
+	  			    }
+	  			)
+	  		    }
+	  		/>
+		  </Section>
         </View>
+		
       </ScrollView>
     </View>
   );
