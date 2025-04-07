@@ -5,7 +5,7 @@
  * @format
  */
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import type {PropsWithChildren} from 'react';
 import {
   ScrollView,
@@ -23,6 +23,7 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import {watchEvents} from "react-native-watch-connectivity";
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -61,17 +62,24 @@ function App(): React.JSX.Element {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
 
-  /*
-   * To keep the template simple and small we're adding padding to prevent view
-   * from rendering under the System UI.
-   * For bigger apps the reccomendation is to use `react-native-safe-area-context`:
-   * https://github.com/AppAndFlow/react-native-safe-area-context
-   *
-   * You can read more about it here:
-   * https://github.com/react-native-community/discussions-and-proposals/discussions/827
-   */
-  const safePadding = '5%';
 
+  
+  const [number, setNumber] = useState(null);
+  useEffect(() => {
+	  const unsubscribe = watchEvents.addListener('message', (messageFromWatch, reply) => {
+	    console.log({messageFromWatch})
+		setNumber(messageFromWatch)
+	    reply({text: 'Thanks watch!'})
+	  })
+
+    return () => {
+      unsubscribe();
+    };
+  }, []);
+  
+  
+  
+  const safePadding = '5%';
   return (
     <View style={backgroundStyle}>
       <StatusBar
@@ -89,20 +97,9 @@ function App(): React.JSX.Element {
             paddingHorizontal: safePadding,
             paddingBottom: safePadding,
           }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-            screen and then come back to see your edits.
+          <Section title="Message from watch">
+		   {number}
           </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
         </View>
       </ScrollView>
     </View>
