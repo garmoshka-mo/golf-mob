@@ -66,23 +66,9 @@ function App(): React.JSX.Element {
   
   const [watchMessage, setWatchMessage] = useState("waiting...");
   const messageListener = () => watchEvents.on('message', (message) => {
-      setWatchMessage(message)
+      setWatchMessage(JSON.stringify(message))
   })
   useEffect(() => { messageListener() }, [])
-  
-  
-  // useEffect(() => {
-  // 	  const unsubscribe = watchEvents.addListener('message', (messageFromWatch, reply) => {
-  // 	    console.log({messageFromWatch})
-  // 		setWatchMessage(messageFromWatch)
-  // 	    reply({text: 'Thanks watch!'})
-  // 	  })
-  //
-  //   return () => {
-  //     unsubscribe();
-  //   };
-  // }, []);
-  
   
   
   const safePadding = '5%';
