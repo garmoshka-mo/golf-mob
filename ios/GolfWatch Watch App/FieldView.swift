@@ -53,11 +53,12 @@ struct FieldView: View {
       }
   }
 
-    func sendNumber(_ number: Int) {
-        if WCSession.default.isReachable {
-            WCSession.default.sendMessage(["number": number], replyHandler: nil, errorHandler: nil)
-        }
-    }
+  @ObservedObject var phoneConnector = PhoneConnector()
+  func sendNumber(_ number: Int) {
+    self.phoneConnector.session.sendMessage(["number": number], replyHandler: nil) { (error) in
+                print(error.localizedDescription)
+            }
+  }
 }
 
 struct HoleView: View {
