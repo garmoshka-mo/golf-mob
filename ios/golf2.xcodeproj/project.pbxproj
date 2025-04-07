@@ -17,6 +17,7 @@
 		D7092D2F2DA3A6C900F57962 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7092D2E2DA3A6C900F57962 /* ContentView.swift */; };
 		D7092D312DA3A6CB00F57962 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7092D302DA3A6CB00F57962 /* Assets.xcassets */; };
 		D7092D342DA3A6CB00F57962 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7092D332DA3A6CB00F57962 /* Preview Assets.xcassets */; };
+		D7795A1C2DA459A100A0760A /* FieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7795A1B2DA459A100A0760A /* FieldView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		D7092D2E2DA3A6C900F57962 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D7092D302DA3A6CB00F57962 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7092D332DA3A6CB00F57962 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D7795A1B2DA459A100A0760A /* FieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldView.swift; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -124,6 +126,7 @@
 				D7092D2E2DA3A6C900F57962 /* ContentView.swift */,
 				D7092D302DA3A6CB00F57962 /* Assets.xcassets */,
 				D7092D322DA3A6CB00F57962 /* Preview Content */,
+				D7795A1B2DA459A100A0760A /* FieldView.swift */,
 			);
 			path = "GolfWatch Watch App";
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7092D2F2DA3A6C900F57962 /* ContentView.swift in Sources */,
+				D7795A1C2DA459A100A0760A /* FieldView.swift in Sources */,
 				D7092D2D2DA3A6C900F57962 /* GolfWatchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

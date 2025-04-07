@@ -16,11 +16,14 @@ struct GolfWatch_Watch_AppApp: App {
       WCSession.default.activate()
   }
   
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
+  var body: some Scene {
+      WindowGroup {
+          NavigationView {
+              ContentView()
+          }
+      }
+  }
+  
 }
 
 class WatchSessionDelegate: NSObject, WCSessionDelegate {
