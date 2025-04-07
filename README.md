@@ -11,7 +11,8 @@ yarn start
 
 - watch - Turn on dev mode, reboot
 - Connect iPhone with cable, re-connect to make Watch appear in devices
-- If connection to watch hangs - reboot Watch, reboot iPhone.
+- If connection to watch hangs - reboot Watch, reboot iPhone. Sometimes need to reboot even laptop.
+- ? charge Watch and wear on hand. On charging station watch network may glitch.
 
 ### Android
 

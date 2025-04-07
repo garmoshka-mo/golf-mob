@@ -104,7 +104,7 @@ struct HoleView: View {
             }
             .buttonStyle(PlainButtonStyle())
             .offset(y: 20)
-            .frame(width: 36, height: 36)
+            .frame(width: 50, height: 50)
             .contentShape(Circle())
         }
     }
