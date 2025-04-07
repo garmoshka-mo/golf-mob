@@ -9,7 +9,7 @@ final class PhoneConnector: NSObject, ObservableObject {
       if WCSession.isSupported() {
           session.delegate = self
           session.activate()
-            }
+      }
     }
 }
 
