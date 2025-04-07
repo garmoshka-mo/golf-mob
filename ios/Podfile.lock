@@ -1525,6 +1525,8 @@ PODS:
     - React-logger (= 0.78.2)
     - React-perflogger (= 0.78.2)
     - React-utils (= 0.78.2)
+  - RNWatch (1.1.0):
+    - React
   - SocketRocket (0.7.1)
   - Yoga (0.0.0)
 
@@ -1596,6 +1598,7 @@ DEPENDENCIES:
   - ReactAppDependencyProvider (from `build/generated/ios`)
   - ReactCodegen (from `build/generated/ios`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - RNWatch (from `../node_modules/react-native-watch-connectivity`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -1734,6 +1737,8 @@ EXTERNAL SOURCES:
     :path: build/generated/ios
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
+  RNWatch:
+    :path: "../node_modules/react-native-watch-connectivity"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -1803,6 +1808,7 @@ SPEC CHECKSUMS:
   ReactAppDependencyProvider: b48473fe434569ff8f6cb6ed4421217ebcbda878
   ReactCodegen: 78b64f0ad96ef733616f54d0c20923f6c67287fd
   ReactCommon: 547db015202a80a5b3e7e041586ea54c4a087180
+  RNWatch: fd30ca40a5b5ef58dcbc195638e68219bc455236
   SocketRocket: d4aabe649be1e368d1318fdf28a022d714d65748
   Yoga: 66a9a23a82dd4081b393babe509967097759b3d6
 
