@@ -57,11 +57,6 @@ struct FieldView: View {
   func sendNumber(_ number: Int) {
     print("sending num", number)
     
-    if self.phoneConnector.session.isReachable {
-    } else {
-        print("Session not reachable")
-    }
-    
     self.phoneConnector.session.sendMessage(["number": number], replyHandler: nil)
     { (error) in 
       print("error on sending msg to phone")

@@ -20,6 +20,7 @@ struct ContentView: View {
         }
     }
 
+  @ObservedObject var phoneConnector = PhoneConnector()
     func presentVoiceInput() {
         WKExtension.shared().visibleInterfaceController?.presentTextInputController(
             withSuggestions: nil,
@@ -27,6 +28,7 @@ struct ContentView: View {
         ) { result in
             if let result = result?.first as? String {
                 transcript = result
+              self.phoneConnector.session.sendMessage(["speech": result], replyHandler: nil)
             } else {
                 transcript = "No input received"
             }
