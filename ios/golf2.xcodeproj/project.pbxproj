@@ -17,27 +17,8 @@
 		D7092D2F2DA3A6C900F57962 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7092D2E2DA3A6C900F57962 /* ContentView.swift */; };
 		D7092D312DA3A6CB00F57962 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7092D302DA3A6CB00F57962 /* Assets.xcassets */; };
 		D7092D342DA3A6CB00F57962 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7092D332DA3A6CB00F57962 /* Preview Assets.xcassets */; };
-		D7092D3E2DA3A6CC00F57962 /* GolfWatch_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7092D3D2DA3A6CC00F57962 /* GolfWatch_Watch_AppTests.swift */; };
-		D7092D482DA3A6CC00F57962 /* GolfWatch_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7092D472DA3A6CC00F57962 /* GolfWatch_Watch_AppUITests.swift */; };
-		D7092D4A2DA3A6CC00F57962 /* GolfWatch_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7092D492DA3A6CC00F57962 /* GolfWatch_Watch_AppUITestsLaunchTests.swift */; };
+		D7FEBD132DA406A0009FB855 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7FEBD122DA406A0009FB855 /* WatchConnectivity.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		D7092D3A2DA3A6CC00F57962 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D7092D292DA3A6C900F57962;
-			remoteInfo = "GolfWatch Watch App";
-		};
-		D7092D442DA3A6CC00F57962 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D7092D292DA3A6C900F57962;
-			remoteInfo = "GolfWatch Watch App";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		13B07F961A680F5B00A75B9A /* golf2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = golf2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,11 +35,9 @@
 		D7092D2E2DA3A6C900F57962 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D7092D302DA3A6CB00F57962 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7092D332DA3A6CB00F57962 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		D7092D392DA3A6CC00F57962 /* GolfWatch Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GolfWatch Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D7092D3D2DA3A6CC00F57962 /* GolfWatch_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfWatch_Watch_AppTests.swift; sourceTree = "<group>"; };
-		D7092D432DA3A6CC00F57962 /* GolfWatch Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GolfWatch Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D7092D472DA3A6CC00F57962 /* GolfWatch_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfWatch_Watch_AppUITests.swift; sourceTree = "<group>"; };
-		D7092D492DA3A6CC00F57962 /* GolfWatch_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfWatch_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D7312E902DA3B947007F6431 /* GolfWatch-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GolfWatch-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		D7FEBD0D2DA3E324009FB855 /* golf2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = golf2.entitlements; path = golf2/golf2.entitlements; sourceTree = "<group>"; };
+		D7FEBD122DA406A0009FB855 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -67,25 +46,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7FEBD132DA406A0009FB855 /* WatchConnectivity.framework in Frameworks */,
 				0C80B921A6F3F58F76C31292 /* libPods-golf2.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D7092D272DA3A6C900F57962 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D7092D362DA3A6CC00F57962 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D7092D402DA3A6CC00F57962 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -98,6 +64,7 @@
 		13B07FAE1A68108700A75B9A /* golf2 */ = {
 			isa = PBXGroup;
 			children = (
+				D7FEBD0D2DA3E324009FB855 /* golf2.entitlements */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				761780EC2CA45674006654EE /* AppDelegate.swift */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
@@ -110,6 +77,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D7FEBD122DA406A0009FB855 /* WatchConnectivity.framework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				5DCACB8F33CDC322A6C60F78 /* libPods-golf2.a */,
 			);
@@ -129,8 +97,6 @@
 				13B07FAE1A68108700A75B9A /* golf2 */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				D7092D2B2DA3A6C900F57962 /* GolfWatch Watch App */,
-				D7092D3C2DA3A6CC00F57962 /* GolfWatch Watch AppTests */,
-				D7092D462DA3A6CC00F57962 /* GolfWatch Watch AppUITests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
@@ -145,8 +111,6 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* golf2.app */,
 				D7092D2A2DA3A6C900F57962 /* GolfWatch Watch App.app */,
-				D7092D392DA3A6CC00F57962 /* GolfWatch Watch AppTests.xctest */,
-				D7092D432DA3A6CC00F57962 /* GolfWatch Watch AppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -163,6 +127,7 @@
 		D7092D2B2DA3A6C900F57962 /* GolfWatch Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				D7312E902DA3B947007F6431 /* GolfWatch-Watch-App-Info.plist */,
 				D7092D2C2DA3A6C900F57962 /* GolfWatchApp.swift */,
 				D7092D2E2DA3A6C900F57962 /* ContentView.swift */,
 				D7092D302DA3A6CB00F57962 /* Assets.xcassets */,
@@ -177,23 +142,6 @@
 				D7092D332DA3A6CB00F57962 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		D7092D3C2DA3A6CC00F57962 /* GolfWatch Watch AppTests */ = {
-			isa = PBXGroup;
-			children = (
-				D7092D3D2DA3A6CC00F57962 /* GolfWatch_Watch_AppTests.swift */,
-			);
-			path = "GolfWatch Watch AppTests";
-			sourceTree = "<group>";
-		};
-		D7092D462DA3A6CC00F57962 /* GolfWatch Watch AppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				D7092D472DA3A6CC00F57962 /* GolfWatch_Watch_AppUITests.swift */,
-				D7092D492DA3A6CC00F57962 /* GolfWatch_Watch_AppUITestsLaunchTests.swift */,
-			);
-			path = "GolfWatch Watch AppUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,42 +185,6 @@
 			productReference = D7092D2A2DA3A6C900F57962 /* GolfWatch Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D7092D382DA3A6CC00F57962 /* GolfWatch Watch AppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D7092D522DA3A6CC00F57962 /* Build configuration list for PBXNativeTarget "GolfWatch Watch AppTests" */;
-			buildPhases = (
-				D7092D352DA3A6CC00F57962 /* Sources */,
-				D7092D362DA3A6CC00F57962 /* Frameworks */,
-				D7092D372DA3A6CC00F57962 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D7092D3B2DA3A6CC00F57962 /* PBXTargetDependency */,
-			);
-			name = "GolfWatch Watch AppTests";
-			productName = "GolfWatch Watch AppTests";
-			productReference = D7092D392DA3A6CC00F57962 /* GolfWatch Watch AppTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		D7092D422DA3A6CC00F57962 /* GolfWatch Watch AppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D7092D532DA3A6CC00F57962 /* Build configuration list for PBXNativeTarget "GolfWatch Watch AppUITests" */;
-			buildPhases = (
-				D7092D3F2DA3A6CC00F57962 /* Sources */,
-				D7092D402DA3A6CC00F57962 /* Frameworks */,
-				D7092D412DA3A6CC00F57962 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D7092D452DA3A6CC00F57962 /* PBXTargetDependency */,
-			);
-			name = "GolfWatch Watch AppUITests";
-			productName = "GolfWatch Watch AppUITests";
-			productReference = D7092D432DA3A6CC00F57962 /* GolfWatch Watch AppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -283,18 +195,10 @@
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1510;
 					};
 					D7092D292DA3A6C900F57962 = {
 						CreatedOnToolsVersion = 15.1;
-					};
-					D7092D382DA3A6CC00F57962 = {
-						CreatedOnToolsVersion = 15.1;
-						TestTargetID = D7092D292DA3A6C900F57962;
-					};
-					D7092D422DA3A6CC00F57962 = {
-						CreatedOnToolsVersion = 15.1;
-						TestTargetID = D7092D292DA3A6C900F57962;
 					};
 				};
 			};
@@ -313,8 +217,6 @@
 			targets = (
 				13B07F861A680F5B00A75B9A /* golf2 */,
 				D7092D292DA3A6C900F57962 /* GolfWatch Watch App */,
-				D7092D382DA3A6CC00F57962 /* GolfWatch Watch AppTests */,
-				D7092D422DA3A6CC00F57962 /* GolfWatch Watch AppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -337,20 +239,6 @@
 				D7092D342DA3A6CB00F57962 /* Preview Assets.xcassets in Resources */,
 				D7092D312DA3A6CB00F57962 /* Assets.xcassets in Resources */,
 				B4C9049E7E7C043FB9356B83 /* PrivacyInfo.xcprivacy in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D7092D372DA3A6CC00F57962 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D7092D412DA3A6CC00F57962 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,37 +337,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D7092D352DA3A6CC00F57962 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D7092D3E2DA3A6CC00F57962 /* GolfWatch_Watch_AppTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D7092D3F2DA3A6CC00F57962 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D7092D4A2DA3A6CC00F57962 /* GolfWatch_Watch_AppUITestsLaunchTests.swift in Sources */,
-				D7092D482DA3A6CC00F57962 /* GolfWatch_Watch_AppUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D7092D3B2DA3A6CC00F57962 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D7092D292DA3A6C900F57962 /* GolfWatch Watch App */;
-			targetProxy = D7092D3A2DA3A6CC00F57962 /* PBXContainerItemProxy */;
-		};
-		D7092D452DA3A6CC00F57962 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D7092D292DA3A6C900F57962 /* GolfWatch Watch App */;
-			targetProxy = D7092D442DA3A6CC00F57962 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
@@ -488,6 +346,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = golf2/golf2.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7U2K8U4M99;
 				ENABLE_BITCODE = NO;
@@ -503,8 +362,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.golf2;
 				PRODUCT_NAME = golf2;
+				SWIFT_OBJC_BRIDGING_HEADER = "golf2-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -517,6 +377,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = golf2/golf2.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7U2K8U4M99;
 				INFOPLIST_FILE = golf2/Info.plist;
@@ -531,8 +392,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.golf2;
 				PRODUCT_NAME = golf2;
+				SWIFT_OBJC_BRIDGING_HEADER = "golf2-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -607,10 +469,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
@@ -679,10 +538,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
@@ -711,6 +567,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "GolfWatch-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = GolfWatch;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
@@ -722,7 +579,7 @@
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp.golf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -757,6 +614,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "GolfWatch-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = GolfWatch;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
@@ -767,7 +625,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 1.0;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp.golf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -775,146 +633,6 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 10.2;
-			};
-			name = Release;
-		};
-		D7092D4D2DA3A6CC00F57962 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 7U2K8U4M99;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "testwatch.GolfWatch-Watch-AppTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GolfWatch Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GolfWatch Watch App";
-				WATCHOS_DEPLOYMENT_TARGET = 10.2;
-			};
-			name = Debug;
-		};
-		D7092D4E2DA3A6CC00F57962 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 7U2K8U4M99;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "testwatch.GolfWatch-Watch-AppTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GolfWatch Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GolfWatch Watch App";
-				WATCHOS_DEPLOYMENT_TARGET = 10.2;
-			};
-			name = Release;
-		};
-		D7092D4F2DA3A6CC00F57962 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 7U2K8U4M99;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "testwatch.GolfWatch-Watch-AppUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				TEST_TARGET_NAME = "GolfWatch Watch App";
-				WATCHOS_DEPLOYMENT_TARGET = 10.2;
-			};
-			name = Debug;
-		};
-		D7092D502DA3A6CC00F57962 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 7U2K8U4M99;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "testwatch.GolfWatch-Watch-AppUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				TEST_TARGET_NAME = "GolfWatch Watch App";
 				WATCHOS_DEPLOYMENT_TARGET = 10.2;
 			};
 			name = Release;
@@ -945,24 +663,6 @@
 			buildConfigurations = (
 				D7092D4B2DA3A6CC00F57962 /* Debug */,
 				D7092D4C2DA3A6CC00F57962 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D7092D522DA3A6CC00F57962 /* Build configuration list for PBXNativeTarget "GolfWatch Watch AppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D7092D4D2DA3A6CC00F57962 /* Debug */,
-				D7092D4E2DA3A6CC00F57962 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D7092D532DA3A6CC00F57962 /* Build configuration list for PBXNativeTarget "GolfWatch Watch AppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D7092D4F2DA3A6CC00F57962 /* Debug */,
-				D7092D502DA3A6CC00F57962 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
