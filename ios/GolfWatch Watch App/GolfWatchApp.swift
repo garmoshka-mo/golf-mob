@@ -6,12 +6,23 @@
 //
 
 import SwiftUI
+import WatchConnectivity
 
 @main
 struct GolfWatch_Watch_AppApp: App {
+  
+  init() {
+      WCSession.default.delegate = WatchSessionDelegate()
+      WCSession.default.activate()
+  }
+  
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
     }
+}
+
+class WatchSessionDelegate: NSObject, WCSessionDelegate {
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) { }
 }
