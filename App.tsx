@@ -66,7 +66,7 @@ function App(): React.JSX.Element {
   
   const [watchMessage, setWatchMessage] = useState("waiting...");
   const messageListener = () => watchEvents.on('message', (message) => {
-      setWatchMessage(JSON.stringify(message))
+      setWatchMessage(message)
   })
   useEffect(() => { messageListener() }, [])
   
@@ -90,7 +90,8 @@ function App(): React.JSX.Element {
             paddingBottom: safePadding,
           }}>
           <Section title="Message from watch">
-		   {watchMessage}
+		   {JSON.stringify(watchMessage)}
+		   <Text style={{color:'green', fontSize: 60}}>{'\n'}{watchMessage.number}</Text>
           </Section>
 		  <Section title="Message to watch">
 	  		<Button title="Send message to watch"
